@@ -59,6 +59,15 @@ inquirer.prompt([{
 
 See also [example.js](https://github.com/bmbarker/inquirer-file-path-path/blob/master/example.js) for a working example
 
+## Contributing
+<a name="contributing"></a>
+
+**Unit test**
+Unit test are written in [Mocha](https://mochajs.org/). Please add a unit test for every new feature or bug fix. `npm test` to run the test suite.
+
+**Documentation**
+Add documentation for every API change. Feel free to send typo fixes and better docs!
+
 ## License
 
 MIT
