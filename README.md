@@ -13,10 +13,12 @@ npm install --save inquirer-file-path
 ## Features
 - Support for symlinked files
 - Vim style navigation
-- Search for file with "/" key
+- Search for file with `/` key
 
 ### Key Maps
-- Press "/" key to enter search mode.
+- Press `/` key to enter search mode.
+- Use either `up`/`down` arrow keys or `k`/`j` to navigate
+- Use `enter` to select option
 
 ## Usage
 
@@ -63,3 +65,6 @@ MIT
 
 ## Acknowledgements
 A huge thank you to Nick Randall and the other contributors of https://github.com/nicksrandall/inquirer-directory.
+
+## Future features
+[ ] Add filter config option to filter options shown
