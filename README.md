@@ -1,6 +1,6 @@
 # inquirer-file-path
 
-Relative File prompt for [inquirer](https://github.com/SBoudrias/Inquirer.js)
+Relative File Path prompt for [inquirer](https://github.com/SBoudrias/Inquirer.js)
 
 [![Build Status](https://travis-ci.org/nicksrandall/inquirer-directory.svg)](https://travis-ci.org/nicksrandall/inquirer-directory)
 
