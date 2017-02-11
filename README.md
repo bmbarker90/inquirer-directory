@@ -2,7 +2,7 @@
 
 Relative File Path prompt for [inquirer](https://github.com/SBoudrias/Inquirer.js)
 
-[![Build Status](https://travis-ci.org/nicksrandall/inquirer-directory.svg)](https://travis-ci.org/nicksrandall/inquirer-directory)
+[![Build Status](https://travis-ci.org/bmbarker90/inquirer-file-path.svg)](https://travis-ci.org/bmbarker90/inquirer-file-path)
 
 ## Installation
 
