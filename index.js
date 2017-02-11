@@ -147,13 +147,13 @@ Prompt.prototype.render = function() {
     message += chalk.bold("\n Current directory: ") + this.opt.basePath + "/" + chalk.cyan(relativePath);
     var choicesStr = listRender(this.opt.choices, this.selected );
     message += "\n" + this.paginator.paginate(choicesStr, this.selected, this.opt.pageSize);
-  }
 
-  // append search mode info
-  if (this.searchMode) {
-    message += ("\nSearch: " + this.searchTerm);
-  } else {
-    message += "\n(Use \"/\" key to search this directory)";
+    // append search mode info
+    if (this.searchMode) {
+      message += ("\nSearch: " + this.searchTerm);
+    } else {
+      message += "\n(Use \"/\" key to search this directory)";
+    }
   }
 
   this.firstRender = false;
@@ -283,6 +283,7 @@ Prompt.prototype.createChoices = function (basePath, depth) {
     choices.push(BACK);
     choices.push(new Separator());
   }
+
   return choices;
 };
 
