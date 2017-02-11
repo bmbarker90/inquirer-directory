@@ -321,7 +321,8 @@ Prompt.prototype.createChoices = function (basePath, depth) {
  * @returns {String} the absolute path of the choice
  */
 function getAbsolutePath(basePath, choices) {
-  return path.join(basePath, ...choices);
+  const paths = [basePath].concat(choices);
+  return path.join.apply(null, paths);
 }
 
 function getRelativePath(basePathOption, baseAbsolutePath, choices) {
