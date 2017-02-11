@@ -1,7 +1,7 @@
 {
-  "name": "inquirer-directory",
-  "version": "2.1.0",
-  "description": "a directory (relative to given path) selector for Inquirer.js",
+  "name": "inquirer-file-path",
+  "version": "1.0.0",
+  "description": "a file (relative to given path) selector for Inquirer.js",
   "main": "index.js",
   "scripts": {
     "test": "node_modules/.bin/_mocha test/spec",
@@ -10,19 +10,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nicksrandall/inquierer-directory.git"
+    "url": "git+https://github.com/bmbarker/inquirer-file-path.git"
   },
   "keywords": [
     "Inquirer",
-    "directory",
-    "prompt"
+    "file",
+    "prompt",
+    "file picker"
   ],
-  "author": "Nick Randall <nicksrandall@gmail.com> (http://nickrandall.com)",
+  "author": "Ben Barker <barker.ben.m@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nicksrandall/inquierer-directory/issues"
+    "url": "https://github.com/bmbarker/inquirer-file-path/issues"
   },
-  "homepage": "https://github.com/nicksrandall/inquierer-directory#readme",
+  "homepage": "https://github.com/bmbarker/inquirer-file-path#readme",
   "dependencies": {
     "chalk": "^1.1.1",
     "cli-cursor": "^1.0.2",

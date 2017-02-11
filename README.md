@@ -1,13 +1,13 @@
-# inquirer-directory
+# inquirer-file-path
 
-Relative Directory prompt for [inquirer](https://github.com/SBoudrias/Inquirer.js)
+Relative File prompt for [inquirer](https://github.com/SBoudrias/Inquirer.js)
 
 [![Build Status](https://travis-ci.org/nicksrandall/inquirer-directory.svg)](https://travis-ci.org/nicksrandall/inquirer-directory)
 
 ## Installation
 
 ```
-npm install --save inquirer-directory
+npm install --save inquirer-file-path
 ```
 
 ## Features
@@ -17,7 +17,6 @@ npm install --save inquirer-directory
 
 ### Key Maps
 - Press "/" key to enter search mode.
-- Press "-" key to go up (back) a directory.
 
 ## Usage
 
@@ -25,14 +24,14 @@ npm install --save inquirer-directory
 This prompt is anonymous, meaning you can register this prompt with the type name you please:
 
 ```javascript
-inquirer.registerPrompt('directory', require('inquirer-directory'));
+inquirer.registerPrompt('filePath', require('inquirer-file-path'));
 inquirer.prompt({
-  type: 'directory',
+  type: 'filePath',
   ...
 })
 ```
 
-Change `directory` to whatever you might prefer.
+Change `filePath` to whatever you might prefer.
 
 ### Options
 
@@ -45,9 +44,9 @@ See [inquirer](https://github.com/SBoudrias/Inquirer.js) readme for meaning of a
 #### Example
 
 ```javascript
-inquirer.registerPrompt('directory', require('inquirer-directory'));
+inquirer.registerPrompt('filePath', require('inquirer-file-path'));
 inquirer.prompt([{
-  type: 'directory',
+  type: 'file',
   name: 'from',
   message: 'Where you like to put this component?',
   basePath: './src'
@@ -56,10 +55,11 @@ inquirer.prompt([{
 });
 ```
 
-[![asciicast](https://asciinema.org/a/31651.png)](https://asciinema.org/a/31651)
-
-See also [example.js](https://github.com/nicksrandall/inquierer-directory/blob/master/example.js) for a working example
+See also [example.js](https://github.com/bmbarker/inquirer-file-path-path/blob/master/example.js) for a working example
 
 ## License
 
 MIT
+
+## Acknowledgements
+A huge thank you to Nick Randall and the other contributors of https://github.com/nicksrandall/inquirer-directory.

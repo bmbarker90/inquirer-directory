@@ -4,13 +4,13 @@
 
 "use strict";
 var inquirer = require("inquirer");
-inquirer.registerPrompt('directory', require('./index'));
+inquirer.registerPrompt('file', require('./index'));
 
 inquirer.prompt([
   {
-    type: "directory",
+    type: "file",
     name: "path",
-    message: "In what directory would like to perform this action?",
+    message: "In what file would you like to perform this action?",
     basePath: "./node_modules"
   }
 ], function( answers ) {
