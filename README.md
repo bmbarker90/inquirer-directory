@@ -76,4 +76,4 @@ MIT
 A huge thank you to Nick Randall and the other contributors of https://github.com/nicksrandall/inquirer-directory.
 
 ## Future features
-[ ] Add filter config option to filter options shown
+- [ ] Add ability to config to filter options shown
