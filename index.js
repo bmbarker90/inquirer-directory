@@ -65,9 +65,9 @@ util.inherits( Prompt, Base );
 Prompt.prototype._run = function( cb ) {
   var self = this;
   self.searchMode = false;
-  this.done = cb;
+  self.done = cb;
   var alphaNumericRegex = /\w|\.|\-/i;
-  var events = observe(this.rl);
+  var events = observe(self.rl);
 
   var keyUps = events.keypress.filter(function (e) {
     return e.key.name === 'up' || (!self.searchMode && e.key.name === 'k');
@@ -120,7 +120,7 @@ Prompt.prototype._run = function( cb ) {
 
   // Init the prompt
   cliCursor.hide();
-  this.render();
+  self.render();
 
   return this;
 };
@@ -321,7 +321,7 @@ Prompt.prototype.createChoices = function (basePath, depth) {
  * @returns {String} the absolute path of the choice
  */
 function getAbsolutePath(basePath, choices) {
-  const paths = [basePath].concat(choices);
+  var paths = [basePath].concat(choices);
   return path.join.apply(null, paths);
 }
 
