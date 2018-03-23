@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bmbarker/inquirer-file-path.git"
+    "url": "git+https://github.com/bmbarker90/inquirer-file-path.git"
   },
   "keywords": [
     "Inquirer",
@@ -21,9 +21,9 @@
   "author": "Ben Barker <barker.ben.m@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bmbarker/inquirer-file-path/issues"
+    "url": "https://github.com/bmbarker90/inquirer-file-path/issues"
   },
-  "homepage": "https://github.com/bmbarker/inquirer-file-path#readme",
+  "homepage": "https://github.com/bmbarker90/inquirer-file-path#readme",
   "dependencies": {
     "chalk": "^1.1.1",
     "cli-cursor": "^1.0.2",
