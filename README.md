@@ -37,11 +37,13 @@ Change `filePath` to whatever you might prefer.
 
 ### Options
 
-Takes `type`, `name`, `message`, `basePath` properties.
+Takes `type`, `name`, `message`, `basePath`, `allowDotFiles` properties.
 
 See [inquirer](https://github.com/SBoudrias/Inquirer.js) readme for meaning of all except **basePath**.
 
 **basePath** is the relative path from your current working directory
+
+**allowDotFiles** if set to true will list files/folders that start with a dot
 
 #### Example
 

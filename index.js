@@ -274,7 +274,7 @@ function findIndex (term) {
  * Helper to create new choices based on previous selection.
  */
 Prompt.prototype.createChoices = function (basePath, depth) {
-  var choices = getOptions(basePath);
+  var choices = getOptions(basePath, this.opt.allowDotFiles);
   if (choices.length > 0) {
     choices.push(new Separator());
   }
@@ -344,7 +344,7 @@ function isFile(filePath) {
  * @param  {String} basePath the path the folder to get a list of containing folders and files
  * @return {Array}           array of folder names inside of basePath
  */
-function getOptions(basePath) {
+function getOptions(basePath, allowDotFiles) {
   return fs
     .readdirSync(basePath)
     .filter(function(file) {
@@ -352,8 +352,11 @@ function getOptions(basePath) {
       if (stats.isSymbolicLink()) {
         return false;
       }
-      var isNotDotFile = path.basename(file).indexOf('.') !== 0;
-      return isNotDotFile;
+      if (allowDotFiles) {
+        // Means that it doesn't show the parent directory
+        return path.basename(file).indexOf('..') !== 0;
+      }
+      return path.basename(file).indexOf('.') !== 0;
     })
     .sort();
 }
